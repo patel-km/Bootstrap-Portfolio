@@ -6,7 +6,7 @@ ul {
     padding: 0px;
 }
 
-.navbar-brand {
+.navbar-light .navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 32px;
     font-weight: bold;
@@ -15,11 +15,22 @@ ul {
 }
 
 a {
-    display: block;
     padding: 20 8px;
     background-color: #fff;
     color: #4aaaa5;
     text-decoration: none;
+}
+
+href, a:hover, a:visited, a:active, a:focus{
+    padding:none;
+    text-decoration: none;
+    color:#4aaaa5;
+    background-color:#fff;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    text-decoration: none;
+    color:#fff;
 }
 
 .clearfix {
@@ -27,6 +38,7 @@ a {
 }
 #navbar-nav {
     float: right;
+    margin-top: 15px;
 }
 .navbar {
     position: absolute;
@@ -38,10 +50,19 @@ a {
     width: 100%;
     border-bottom: 2px solid #ccc;
     display: block;
+    padding: 0px;
 }
 
-.navbar-light .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='74 170 165 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(74, 170, 165, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler{
+    border-color: #4aaaa5;
+    background-color:#fff;
+}
+.navbar-toggler-icon{
+    width:1.2em;
 }
 
 /* Body CSS */
@@ -104,7 +125,7 @@ textarea{
     text-indent: 0px;
     display: inline-block;
 }
-.button{
+button{
     color: #fff;
     background-color: #4aaaa5;
     padding: 10px;
