@@ -6,7 +6,7 @@ ul {
     padding: 0px;
 }
 
-#name {
+.navbar-brand {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 32px;
     font-weight: bold;
@@ -14,23 +14,20 @@ ul {
     color: #fff;
 }
 
-li {
-    display: inline;
-    float: right;
-}
-
 a {
     display: block;
     padding: 20 8px;
     background-color: #fff;
-    color: #777;
+    color: #4aaaa5;
     text-decoration: none;
 }
 
 .clearfix {
     overflow: auto;
 }
-
+#navbar-nav {
+    float: right;
+}
 .navbar {
     position: absolute;
     top: 0;
@@ -43,6 +40,9 @@ a {
     display: block;
 }
 
+.navbar-light .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
 
 /* Body CSS */
 
@@ -114,8 +114,8 @@ textarea{
 /* Footer CSS */
 .footer {
     position: fixed;
-    left: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
     border-top: 5px solid #4aaaa5;;
     background-color: #666;
